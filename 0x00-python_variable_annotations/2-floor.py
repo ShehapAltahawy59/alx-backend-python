@@ -1,3 +1,11 @@
 #!/usr/bin/env python3
-def add (n:float) -> int:
-    return int(n)
+'''
+type-annotated function
+'''
+import math
+
+
+def floor(n: float) -> int:
+    '''function that floor a float and return an integer
+    '''
+    return (math.floor(n))

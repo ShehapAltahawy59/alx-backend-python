@@ -1,3 +1,10 @@
 #!/usr/bin/env python3
-def add (a:float,b:float) -> float:
-    return a+b
+'''
+type-annotated function
+'''
+
+
+def add(a: float, b: float) -> float:
+    '''function that add two float and return their output
+    '''
+    return (a + b)

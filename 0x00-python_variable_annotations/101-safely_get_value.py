@@ -1,8 +1,18 @@
 #!/usr/bin/env python3
-from typing import Iterable, Sequence, List, Tuple,Any,Union,TypeVar
+'''
+type-annotated function
+'''
+from typing import Any, Mapping, Union, TypeVar
 
-T = TypeVar("T")
-def safely_get_value(dct:map, key, default:Union[~T,None] = None)->Union[Any,~T]:
+
+T = TypeVar('T')
+Res = Union[Any, T]
+Def = Union[T, None]
+
+
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
+    '''Retrieves a value from a dict using a given key.
+    '''
     if key in dct:
         return dct[key]
     else:

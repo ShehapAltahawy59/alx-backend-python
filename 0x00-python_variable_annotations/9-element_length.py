@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-from typing import Iterable, Sequence, List, Tuple
+'''
+type-annotated function
+'''
+from typing import Iterable, List, Sequence, Tuple
+
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-     return [(i, len(i)) for i in lst]
+    '''Computes  and return the length of a list of sequences.
+    '''
+    return [(i, len(i)) for i in lst]
