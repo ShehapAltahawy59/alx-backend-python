@@ -10,7 +10,7 @@ Vector = List[float]
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension():
+async def async_comprehension() -> Vector:
     """
     Coroutine async_comprehension
     yield random numbers collected
